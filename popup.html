@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" contents= "ie=edge">
+    <title>Amazon Launcher</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        html, body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 120px;
+            padding: 0;
+            width: 320px;
+        }
+
+        h1 {
+            font-family: 'Menlo', monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color:rgb(255, 187, 0);
+        }
+        a:link, a:visited{
+            color: #000;
+            outline: 0;
+            text-decoration: none;      
+        }
+        img{
+            width: 33px;
+        }
+
+        .modal-header{
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+        .modal-content{
+            padding: 0 2px;
+        }
+
+        .modal-icons{
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%
+        }
+
+        .logo{
+            padding: 12px;
+        }
+
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version{
+            color: #444;
+            font-size: 18px;
+        }
+
+        .flex-container{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+
+        .flex{
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex:hover{
+            opacity: 0.4;
+        }
+
+        .flex .fa {
+            font-size: 40px;
+            color: #222222;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src= Images\main-icon.png alta="Amazon Launcher" class="logo-icon"> Amazon Launcher </span>  
+        </h1>
+    </div>
+    <div class="modal-content">
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://www.amazon.com" target="_blank">
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.amazon.com/gp/cart/view.html?ref=nav_cart" target="_blank">
+                        <img src= Images\cart_full.png>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.amazon.com/Amazon-Video/b/ref=topnav_storetab_atv?node=2858778011&ie=UTF8" target="_blank">
+                    <img src= Images\movie-1.png>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.amazon.com/gp/css/homepage.html/ref=nav_youraccount_ya" target="_blank">
+                    <img src= Images\acount.png>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155" target="_blank">
+                    <i class="fa fa-book"></i>
+                 </a>
+             </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
